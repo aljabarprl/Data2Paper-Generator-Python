@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage{amsmath} 
+\usepackage{textcomp}
+\usepackage{siunitx} 
+\usepackage{graphicx} 
+\usepackage{hyperref} 
+\usepackage{authblk}
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\addbibresource{references.bib} 
+
+\newread\FileInName
+\immediate\openin\FileInName=../results/filename_raw.txt
+
+\begingroup
+    \endlinechar=-1
+    \immediate\read\FileInName to\FileInString
+    
+    \xdef\inputfilename{\FileInString}
+\endgroup
+\immediate\closein\FileInName
+
+\def\rasiostatistikvalue{0}
+\def\volatilitasbtc{0}
+\def\sharperatiobtc{0}
+
+\newread\fhandle
+\immediate\openin\fhandle=../results/hasil_statistik.dat
+
+\begingroup
+    \endlinechar=-1 
+    
+    \read\fhandle to\tempA 
+    \read\fhandle to\tempB 
+    \read\fhandle to\tempC 
+    
+    \ifx\tempA\empty
+    
+    \else
+        % \expandafter\edef\csname rasiostatistikvalue\endcsname{\tempA}
+        % \expandafter\edef\csname volatilitasbtc\endcsname{\tempB}
+        % \expandafter\edef\csname sharperatiobtc\endcsname{\tempC}
+        
+        % \global\let\rasiostatistikvalue\rasiostatistikvalue
+        % \global\let\volatilitasbtc\volatilitasbtc
+        % \global\let\sharperatiobtc\sharperatiobtc
+        \global\edef\rasiostatistikvalue{\tempA}
+        \global\edef\volatilitasbtc{\tempB}
+        \global\edef\sharperatiobtc{\tempC}
+    \fi
+\endgroup
+
+\immediate\closein\fhandle
+
+\begin{document}
+
+\title{Analisis Pengaruh Cryptocurrency dalam Ekonomi Global: Perbandingan Aset}
+\author{Pasa$^{1}$ \& Team$^{2}$}
+\date{\today}
+\affil{$^1$ Departemen Statistika Terapan, Universitas XYZ}
+\affil{$^2$ Fakultas Ekonomi, Institut ABC}
+
+\maketitle
+
+\begin{abstract}
+Studi ini menganalisis dampak ekonomi dari *cryptocurrency*, membandingkan volatilitas dan tingkat pengembaliannya dengan aset tradisional seperti emas dan indeks saham S\&P 500. Menggunakan data historis nyata yang diolah melalui program Fortran, kami menghitung metrik utama seperti rasio Sharpe dan korelasi. Hasil awal menunjukkan volatilitas yang signifikan pada aset kripto, namun dengan potensi pengembalian yang lebih tinggi, menggarisbawahi kebutuhan akan kerangka regulasi yang lebih baik \cite{momtaz2024impact, bouri2017comprehensive}.
+\end{abstract}
+
+\section{Pendahuluan}
+*Cryptocurrency* telah muncul sebagai kelas aset baru yang menarik perhatian investor, regulator, dan pembuat kebijakan di seluruh dunia. Aset digital ini menawarkan desentralisasi dan efisiensi transaksi, namun juga menimbulkan kekhawatiran tentang stabilitas keuangan dan kejahatan finansial \cite{momtaz2024impact, bouri2017comprehensive}. Penelitian ini bertujuan untuk mengukur secara kuantitatif kinerja aset kripto dibandingkan dengan aset tradisional.
+
+\section{Metodologi Data dan Komputasi}
+
+Kami mengumpulkan data harga penutupan harian untuk Bitcoin (BTC), Emas (USD/oz), dan indeks S\&P 500 selama periode 5 tahun. Data diperoleh dari sumber daring terpercaya (misalnya, Kaggle atau Investing.com) dan disimpan dalam file \texttt{\detokenize\expandafter{\inputfilename}}.
+
+Analisis statistik yang kompleks, termasuk perhitungan tingkat pengembalian harian, volatilitas (standar deviasi), dan rasio Sharpe, dilakukan menggunakan program \textbf{Fortran}. Program ini memproses data input dan menghasilkan metrik utama ke dalam file \texttt{hasil\_statistik.dat}.
+
+\section{Hasil dan Pembahasan}
+Analisis data menghasilkan beberapa metrik kunci. Rasio Sharpe, metrik standar risiko-pengembalian, untuk Bitcoin adalah \num{\sharperatiobtc}. Sebagai perbandingan, rasio Sharpe rata-rata untuk S\&P 500 dan Emas jauh lebih rendah.
+
+Tingkat volatilitas tahunan (standar deviasi pengembalian harian) untuk Bitcoin adalah sekitar \num{\volatilitasbtc}\%, yang secara signifikan lebih tinggi daripada aset tradisional. Rasio statistik pembanding utama yang dihitung oleh program Fortran adalah \num{\rasiostatistikvalue}.
+
+\section{Kesimpulan}
+% \bibliographystyle{plain} 
+\printbibliography 
+
+\end{document}

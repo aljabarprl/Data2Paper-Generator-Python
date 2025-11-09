@@ -1,0 +1,18 @@
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.jpg binary
+*.eps binary
+
+*.tex diff=Tex
+*.aux diff=Tex
+*.bbl diff=BibTex
+*.blg diff=BibTex
+*.out diff=Tex
+*.bib diff=BibTex
+*.sh diff=Shell
+
+*.sh linguist-language=Shell
+*.tex linguist-language=Tex
+*.ini linguist-language=Tex
+*.lvt linguist-language=Tex

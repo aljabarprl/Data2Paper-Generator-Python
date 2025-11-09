@@ -1,0 +1,85 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{momtaz2024impact}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8fa9491f151a86fe7df3b2adf9b9ab0e}{%
+           family={Momtaz},
+           familyi={M\bibinitperiod},
+           given={Parviz},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{8fa9491f151a86fe7df3b2adf9b9ab0e}
+      \strng{fullhash}{8fa9491f151a86fe7df3b2adf9b9ab0e}
+      \strng{bibnamehash}{8fa9491f151a86fe7df3b2adf9b9ab0e}
+      \strng{authorbibnamehash}{8fa9491f151a86fe7df3b2adf9b9ab0e}
+      \strng{authornamehash}{8fa9491f151a86fe7df3b2adf9b9ab0e}
+      \strng{authorfullhash}{8fa9491f151a86fe7df3b2adf9b9ab0e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Available at SSRN 4402636}
+      \field{title}{The Impact of Cryptocurrencies on the Global Economy}
+      \field{year}{2024}
+    \endentry
+    \entry{bouri2017comprehensive}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e5a84a2df15c342eb56bb61d879ae67d}{%
+           family={Bouri},
+           familyi={B\bibinitperiod},
+           given={Elie},
+           giveni={E\bibinitperiod}}}%
+        {{hash=03b2a54476ebff26b7c395a01b40aab9}{%
+           family={Azzi},
+           familyi={A\bibinitperiod},
+           given={Georges},
+           giveni={G\bibinitperiod}}}%
+        {{hash=6d3ce0ed18dc2a11c9b74e7b5372da33}{%
+           family={Roubaud},
+           familyi={R\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{d4a965bcf0f8f16b0c080b15e7e76ae5}
+      \strng{fullhash}{d4a965bcf0f8f16b0c080b15e7e76ae5}
+      \strng{bibnamehash}{d4a965bcf0f8f16b0c080b15e7e76ae5}
+      \strng{authorbibnamehash}{d4a965bcf0f8f16b0c080b15e7e76ae5}
+      \strng{authornamehash}{d4a965bcf0f8f16b0c080b15e7e76ae5}
+      \strng{authorfullhash}{d4a965bcf0f8f16b0c080b15e7e76ae5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Empirical Finance}
+      \field{title}{A comprehensive study of cryptocurrency as a financial asset}
+      \field{volume}{43}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 20}
+      \range{pages}{20}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

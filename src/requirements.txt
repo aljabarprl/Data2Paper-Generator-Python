@@ -1,0 +1,9 @@
+pandas
+numpy
+openpyxl
+odfpy
+h5py
+pyarrow
+fastparquet
+pytables
+tables
