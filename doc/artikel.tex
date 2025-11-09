@@ -64,7 +64,7 @@
 \maketitle
 
 \begin{abstract}
-Studi ini menganalisis dampak ekonomi dari *cryptocurrency*, membandingkan volatilitas dan tingkat pengembaliannya dengan aset tradisional seperti emas dan indeks saham S\&P 500. Menggunakan data historis nyata yang diolah melalui program Fortran, kami menghitung metrik utama seperti rasio Sharpe dan korelasi. Hasil awal menunjukkan volatilitas yang signifikan pada aset kripto, namun dengan potensi pengembalian yang lebih tinggi, menggarisbawahi kebutuhan akan kerangka regulasi yang lebih baik \cite{momtaz2024impact, bouri2017comprehensive}.
+Studi ini menganalisis dampak ekonomi dari *cryptocurrency*, membandingkan volatilitas dan tingkat pengembaliannya dengan aset tradisional seperti emas dan indeks saham S\&P 500. Menggunakan data historis nyata yang diolah melalui program Python, kami menghitung metrik utama seperti rasio Sharpe dan korelasi. Hasil awal menunjukkan volatilitas yang signifikan pada aset kripto, namun dengan potensi pengembalian yang lebih tinggi, menggarisbawahi kebutuhan akan kerangka regulasi yang lebih baik \cite{momtaz2024impact, bouri2017comprehensive}.
 \end{abstract}
 
 \section{Pendahuluan}
@@ -74,12 +74,12 @@ Studi ini menganalisis dampak ekonomi dari *cryptocurrency*, membandingkan volat
 
 Kami mengumpulkan data harga penutupan harian untuk Bitcoin (BTC), Emas (USD/oz), dan indeks S\&P 500 selama periode 5 tahun. Data diperoleh dari sumber daring terpercaya (misalnya, Kaggle atau Investing.com) dan disimpan dalam file \texttt{\detokenize\expandafter{\inputfilename}}.
 
-Analisis statistik yang kompleks, termasuk perhitungan tingkat pengembalian harian, volatilitas (standar deviasi), dan rasio Sharpe, dilakukan menggunakan program \textbf{Fortran}. Program ini memproses data input dan menghasilkan metrik utama ke dalam file \texttt{hasil\_statistik.dat}.
+Analisis statistik yang kompleks, termasuk perhitungan tingkat pengembalian harian, volatilitas (standar deviasi), dan rasio Sharpe, dilakukan menggunakan program \textbf{Python}. Program ini memproses data input dan menghasilkan metrik utama ke dalam file \texttt{hasil\_statistik.dat}.
 
 \section{Hasil dan Pembahasan}
 Analisis data menghasilkan beberapa metrik kunci. Rasio Sharpe, metrik standar risiko-pengembalian, untuk Bitcoin adalah \num{\sharperatiobtc}. Sebagai perbandingan, rasio Sharpe rata-rata untuk S\&P 500 dan Emas jauh lebih rendah.
 
-Tingkat volatilitas tahunan (standar deviasi pengembalian harian) untuk Bitcoin adalah sekitar \num{\volatilitasbtc}\%, yang secara signifikan lebih tinggi daripada aset tradisional. Rasio statistik pembanding utama yang dihitung oleh program Fortran adalah \num{\rasiostatistikvalue}.
+Tingkat volatilitas tahunan (standar deviasi pengembalian harian) untuk Bitcoin adalah sekitar \num{\volatilitasbtc}\%, yang secara signifikan lebih tinggi daripada aset tradisional. Rasio statistik pembanding utama yang dihitung oleh program Python adalah \num{\rasiostatistikvalue}.
 
 \section{Kesimpulan}
 % \bibliographystyle{plain} 

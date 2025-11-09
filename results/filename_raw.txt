@@ -1,1 +1,1 @@
-data_ekonomi.jsonl
+data_ekonomi.json
