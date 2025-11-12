@@ -113,9 +113,9 @@ Build output (pdf) is located at ``\build``
 Customize:
 
 ```bash
-edit your journal at ``artikel.tex``
+edit your journal at 'artikel.tex'
 ```
 
 ```bash
-edit your references at ``references.bib``
+edit your references at 'references.bib'
 ```
