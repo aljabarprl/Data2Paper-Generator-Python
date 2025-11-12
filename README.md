@@ -25,15 +25,19 @@ Directory:
 ```bash
 cd doc
 ```
-Instal Chocolatey:
+Install Chocolatey: (optional: if you already have or download directly from website skip this)
 ```Chocolatey
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 Install MiKTeX:
 ```bash
-https://miktex.org/download or choco install miktex
+https://miktex.org/download
 ```
-Install Python: (if you already have skip this)
+Or with choco:
+```bash
+choco install miktex
+```
+Install Python: (if you already have skip this or download directly from website)
 ```bash
 choco install python
 ```
@@ -72,17 +76,17 @@ Or if you want spesific:
 ```bash
 sudo apt install texlive-latex-base texlive-bibtex-extra biber
 ```
-Permission:
-```bash
-chmod +x compile_report.sh
-```
 Install Python: (if you already have skip this)
 ```bash
-choco install python
+sudo apt install python3 python3-pip
 ```
 Install Dependencies:
 ```bash
 pip install numpy pandas pyarrow tables odfpy h5py fastparquet openpyxl
+```
+Permission:
+```bash
+chmod +x compile_report.sh
 ```
 ##
 Compiling:
@@ -98,7 +102,7 @@ For binary data you can make the dummy with:
 ```bash
 python ..\src\create_binary_data.py
 ```
-And you customize your own data at ``create_binary_data.py``
+And you customize your binary data at ``create_binary_data.py``
 
 Data input is located at ``\data`` (here is your data source for python process it)
 
